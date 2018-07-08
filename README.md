@@ -47,4 +47,4 @@ data.preloading.enabled=false
 
 так же можно менять параметры в тестах на свое усмотрение.
 
-Все вопросы можно направлять по адресу: valan,skeeba@gmail.com
+Все вопросы можно направлять по адресу: valan.skeeba@gmail.com
