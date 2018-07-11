@@ -26,7 +26,7 @@ public class VisitEventsController {
     @PostMapping("/statistics")
     public ResponseEntity<?> addStatistics(@RequestParam(name = "user") String userName, @RequestParam(name = "url") String site) {
         CompletableFuture<VisitEvent> event = eventService.saveVisitEvent(userName, site);
-        //зделал чтобы возвращалась правильная статистика, с учетом только что добавленного
+        //сделал чтобы возвращалась правильная статистика, с учетом только что добавленного
         event.join();
         return new ResponseEntity<>(eventService.getStatisticsForCurrentDay(), HttpStatus.CREATED);
     }

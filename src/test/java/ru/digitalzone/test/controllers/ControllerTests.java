@@ -10,7 +10,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
-import ru.digitalzone.test.dao.VisitEventRepository;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -26,8 +25,7 @@ import java.util.concurrent.Future;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 
 public class ControllerTests {
-    @Autowired
-    VisitEventRepository visitEventRepository;
+
     @Autowired
     private TestRestTemplate restTemplate;
 
